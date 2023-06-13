@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: Nordic;
+    src: url("./fonts/Norse-Bold.otf");
+}
+
 body {
     overflow: hidden;
 }
@@ -16,7 +21,31 @@ body {
     background-size: cover;
     width: 30vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
 
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    opacity: .8;
+    margin-top: 200px;
+    padding: 10px;
+    font-family: Nordic;
+    font-size: 100px;
+}
+
+.photographer a {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.image img {
+    height: 100px;
 }
 
 .text {
