@@ -14,6 +14,7 @@ body {
 
 .content {
     display: flex;
+    background-color: #baf6ff;
 }
 
 .image {
@@ -39,11 +40,6 @@ body {
     font-size: 100px;
 }
 
-.photographer a {
-    color: white;
-    margin-bottom: 10px;
-}
-
 .image img {
     height: 100px;
 }
@@ -52,6 +48,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-family: sans-serif;
+    padding-left: 50px;
+    font-size: larger;
 }
 
 .formBox {
@@ -62,9 +61,27 @@ body {
 .formLeft {
     display: flex;
     flex-direction: column;
+    margin-right: 40px;
 }
 
 .formRight {
     display: flex;
     flex-direction: column;
+}
+
+input {
+    margin-bottom: 20px;
+    background-color: #fffefe;
+}
+
+label {
+    font-size: small;
+}
+
+.photographer {
+    margin-bottom: 10px;
+}
+
+a {
+    color: white;
 }
