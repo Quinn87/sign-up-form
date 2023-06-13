@@ -1,20 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
 .content {
     display: flex;
-    /* border: black 1px solid; */
-    /* justify-content: stretch; */
 }
 
 .image {
-}
+    background-image: url("./photos/nathan-hobbs-qmWqUl8Uvsc-unsplash.jpg");
+    background-size: cover;
+    width: 30vw;
+    height: 100vh;
 
-.image img {
-    width: 100%;
-    height: 100%;
 }
 
 .text {
-    /* border: black 1px solid; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.formLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRight {
+    display: flex;
+    flex-direction: column;
 }
