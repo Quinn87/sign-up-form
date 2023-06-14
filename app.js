@@ -11,9 +11,6 @@ passwordInput.addEventListener('change', function(e) {
 confirmPasswordInput.addEventListener('input', function(e) {
     let confirmPassword = e.target.value;
     let result = checkPassword(password,confirmPassword)
-    if (result === false){
-
-    }
 })
 
 function checkPassword(password,confirmPassword) {
