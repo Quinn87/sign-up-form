@@ -26,38 +26,39 @@
         <div class="text">
             <div class="statement">This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
-                <p>Sign up now to get started.</p>
-                <p>You know you want to.</p>
+                <p>Sign up <span class="italics">now</span> to get started.</p>
+                <br>
+                <p>You <span class="italics">know</span> you want to.</p>
             </div>
 
             <form action="#" method="post" class="form">
                 <div class="formBox">
                     <div class="formLeft">
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <input type="text" name="firstName" id="firstName" required>
 
                         <label for="email">EMAIL</label>
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" required>
 
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div class="formRight">
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName" id="lastName" required>
 
                         <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="text" name="phoneNumber" id="phoneNumber">
+                        <input type="text" name="phoneNumber" id="phoneNumber" required>
 
                         <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <input type="password" name="confirmPassword" id="password" required>
                     </div>
                 </div>
             </form>
 
             <div class="createAccount">
                 <button>Create Account</button>
-                <p>Already have an account? <a href="#" class="logInLink">Log in</a></p>
+                <p class="login">Already have an account? <a href="#" class="logInLink">Log in</a></p>
             </div>
         </div>
     </div>
