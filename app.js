@@ -1,5 +1,6 @@
 const passwordInput = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirmPassword');
+const passwordMismatch = document.querySelector('.passwordMismatch');
 
 let password = ''
 
@@ -9,18 +10,23 @@ passwordInput.addEventListener('change', function(e) {
 
 confirmPasswordInput.addEventListener('input', function(e) {
     let confirmPassword = e.target.value;
-    checkPassword(password,confirmPassword)
+    let result = checkPassword(password,confirmPassword)
+    if (result === false){
+
+    }
 })
 
 function checkPassword(password,confirmPassword) {
     if(password === confirmPassword){
         passwordInput.classList.remove('invalid');
         confirmPasswordInput.classList.remove('invalid');
+        passwordMismatch.classList.add('hidden')
         return true;
     }
     else{
         passwordInput.classList.add('invalid');
         confirmPasswordInput.classList.add('invalid');
+        passwordMismatch.classList.remove('hidden')
         return false;
     }
 }

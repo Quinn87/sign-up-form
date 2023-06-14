@@ -131,3 +131,13 @@ button {
 button:hover {
     background-color: #4295bf;
 }
+
+.passwordMismatch {
+    color: red;
+    font-size: small;
+    
+}
+
+.hidden {
+    display: none;
+}
